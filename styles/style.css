@@ -237,6 +237,9 @@ body {
 }
 
 @media (max-width: 484px) {
+  #welcome {
+    margin: 8vh 5vw 0vh;
+  }
   #container #sub-info #sub-info-1,
   #container #sub-info #sub-info-2,
   #container #sub-info #sub-info-3,
