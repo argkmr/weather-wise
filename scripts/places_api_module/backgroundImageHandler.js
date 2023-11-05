@@ -12,7 +12,7 @@ const backgroundImageHandler = async () =>{
 
     if (placeBackgroundImage) {
         /* If exists then render immediately*/
-        const anyCssElement = document.styleSheets[0].cssRules[2];
+        const anyCssElement = document.styleSheets[0].cssRules[1];
         anyCssElement.style.backgroundImage = `url(${placeBackgroundImage})`;
     }
     else {
