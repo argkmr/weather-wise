@@ -7,7 +7,7 @@ const weatherDataHandler = async () => {
     else placeName.value = placeName.value;
 
     const KEY = "b256a47f9c0f45ebb1d63652233110";
-    const URL = `http://api.weatherapi.com/v1/current.json?key=${KEY}&q=${placeName.value}&aqi=no`;
+    const URL = `https://api.weatherapi.com/v1/current.json?key=${KEY}&q=${placeName.value}&aqi=no`;
 
     const response = await fetch(URL);
     const data = await response.json();
