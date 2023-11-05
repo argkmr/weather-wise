@@ -1,7 +1,11 @@
 const removePrevTempHTML = () => {
-
+    const welcome = document.getElementById("welcome");
     const container = document.getElementById("container");
-    if (container) container.remove();
+
+    welcome ? welcome.remove() : container.remove();
+
+    // if (welcome) welcome.remove();
+    // else if (container) container.remove();
 }
 
 export default removePrevTempHTML;

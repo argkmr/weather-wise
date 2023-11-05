@@ -149,24 +149,24 @@ const weatherDataHandler = async () => {
         subInfo6.setAttribute("id", "sub-info-6");
         {
             const heading4 = document.createElement("h4");
-            heading4.innerText = "Time Zone";
+            heading4.innerText = "Local Time";
 
-            const heading2 = document.createElement("h2");
-            heading2.innerText = timeZone;
-            
-            subInfo6.append(heading4,heading2);
+            const heading3 = document.createElement("h3");
+            heading3.innerText = localTime;
+
+            subInfo6.append(heading4,heading3);
         }
 
         const subInfo7 = document.createElement("div");
         subInfo7.setAttribute("id", "sub-info-7");
         {
             const heading4 = document.createElement("h4");
-            heading4.innerText = "Local Time";
+            heading4.innerText = "Time Zone";
 
-            const heading3 = document.createElement("h3");
-            heading3.innerText = localTime;
-
-            subInfo7.append(heading4,heading3);
+            const heading2 = document.createElement("h2");
+            heading2.innerText = timeZone;
+            
+            subInfo7.append(heading4,heading2);
         }
 
         subInfo.append(subInfo1, subInfo2, subInfo3, subInfo4, subInfo5, subInfo6, subInfo7);

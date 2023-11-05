@@ -24,12 +24,11 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("../utils/weather.jpg");
+    background-image: url("../utils/weather1.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    //filter: blur($qem);
-    
+    //filter: blur($qem*0.5);
 }
 
 #navbar {
@@ -44,10 +43,9 @@ body {
     justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.5);
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 1;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: "EB Garamond";
 
     #navlogo {
         height: 2.5em;
@@ -87,8 +85,8 @@ body {
         width: 2em;
         mix-blend-mode: darken;
         padding: 0.3em 0em 0em;
-        transition: all 0.3s; 
-        border-radius: $qem*2.5; 
+        transition: all 0.3s;
+        border-radius: $qem*2.5;
         filter: brightness(1);
     }
 
@@ -98,54 +96,56 @@ body {
     }
 }
 
-#container{
-    border: 1px solid black;
+#container {
+    border: 0.2px solid black;
 }
 
 
-#welcome{
-    //border:1px solid black;
+#welcome {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20vh 5vw 0vh;
-    font-family: "Virgil";
+    font-family: "EB Garamond";
 
-    h1,h2{
+    h1,
+    h2 {
         margin: $qem;
         text-align: center;
-        text-shadow: 1px 1px 5px rgba(238, 72, 72, 0.873); 
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.873);
     }
-    h1{
-        font-size: 50px;
-        color : rgb(244, 226, 212);
+
+    h1 {
+        margin-top:1em;
+        font-size: 8vh;
+        color: rgb(255, 255, 255);
     }
-    h2{
-        font-size: 35px;
-        color:rgb(255, 149, 2)
+
+    h2 {
+        font-size: 5vh;
+        color: rgb(255, 149, 2)
     }
 
 }
 
 
 #tempInfo {
-    margin: 6em 1em 1em;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "EB Garamond";
     font-size: large;
-    background-image: linear-gradient(rgba(49, 79, 112, 0.877), lightslategray);
-    min-width: 35vw;
-    border-radius: $qem;
+    margin: 5em 1em;
+    background-image: linear-gradient(rgba(70, 103, 138, 0.88), lightslategray);
+    min-width: 30vw;
+    border-radius: 0.25em;
     opacity: 0.8;
-    box-shadow: 4px 4px 10px 1px rgb(35, 35, 35);
+    box-shadow: rgb(35, 35, 35) 4px 4px 10px 1px;
 
     #temp {
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 2em;
-        height: 20vh;
+        height: 16vh;
 
         #logo {
             height: 4.5em;
@@ -163,31 +163,35 @@ body {
             font-size: 6em;
             margin: 0em;
             color: rgb(255, 195, 195);
+
             sup {
                 font-size: large;
             }
         }
     }
+
     h2 {
         margin: 0em 0em $qem;
         color: rgba(255, 255, 255, 0.897);
     }
+
     p {
-        font-weight: bold;
+        font-weight: bolder;
         font-size: 1em;
         margin: 0em 0em 0em;
     }
 
 }
 
-#sub-info{
-    // border:1px solid black;
+#sub-info {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgb(155, 118, 59), rgb(108, 107, 73));
-    filter: opacity(0.80);
-    margin:7.5em 1em 3em;
+    background-image: linear-gradient(rgba(122, 120, 120, 0.863), rgb(124, 124, 124));
+    filter: opacity(0.8);
+    margin: 8em 1em;
+    min-height: 50vh;
+    padding: 1em;
     border-radius: 0.5em;
     box-shadow: 4px 4px 10px 1px rgb(35, 35, 35);
 
@@ -198,33 +202,39 @@ body {
     #sub-info-5,
     #sub-info-6,
     #sub-info-7 {
-        //border: 1px solid black;
         text-wrap: wrap;
-        height: 10em;
-        min-width:10em;
-        margin:2em;
-        color:rgb(0, 0, 0);
+        height: 8em;
+        min-width: 9em;
+        margin: 1em;
         text-align: center;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding: 1px;
+        font-family: "EB Garamond";
+        padding: 1em;
         color: cornsilk;
-        box-shadow: 2px 2px 4px 0px rgb(35, 35, 35);
-        h1,h4{
-            margin:0em;
-            
+        border-radius: 0.5em;
+        box-shadow: 3px 3px 5px 0px rgb(35, 35, 35);
+        background-color: rgba(84, 87, 90, 0.859);
+
+        h1,
+        h4 {
+            margin: 0em;
+
         }
-        h1{
+
+        h1 {
             font-size: 2.8em;
-            sup{
+
+            sup {
                 font-size: medium;
                 font-weight: bolder;
             }
         }
-        
-    }:not(h1):not(h2):not(h3):not(h4):not(sup):hover{
+
+    }
+
+    :not(h1):not(h2):not(h3):not(h4):not(sup):hover {
         transform: scale(1.1);
         border-radius: 1em;
         box-shadow: 4px 4px 15px 1px rgb(35, 35, 35);
@@ -237,35 +247,40 @@ body {
 }
 
 
-@media (max-width:484px){
-    #container{
-        #sub-info{
+@media (max-width:484px) {
+    #container {
+        #sub-info {
+
             #sub-info-1,
             #sub-info-2,
             #sub-info-3,
             #sub-info-4,
             #sub-info-5,
             #sub-info-6,
-            #sub-info-7{
+            #sub-info-7 {
                 height: 10em;
                 width: 23em;
             }
-    
+
         }
-        
+
     }
 }
 
-@media (min-width:1100px){
-    #container{
+@media (min-width:1333px) {
+    #container {
         display: flex;
+
         #tempInfo {
-            display : flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: 6em 1em 2em;
+            margin: 8em 1em;
+        }
+
+        #sub-info{
+            margin: 10em 1em;
         }
     }
 
 }
-
