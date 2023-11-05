@@ -86,6 +86,10 @@ body {
   transform: scale(1.2);
 }
 
+#container {
+  border: 1px solid black;
+}
+
 #welcome {
   display: flex;
   flex-direction: column;

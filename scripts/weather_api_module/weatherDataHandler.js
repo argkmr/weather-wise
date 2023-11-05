@@ -3,7 +3,7 @@ import { placeName } from "../index.js";
 
 const weatherDataHandler = async () => {
 
-    if (placeName.value==="delhi") placeName.value = "new delhi";
+    if (placeName.value==="delhi" || placeName.value==="Delhi") placeName.value = "New delhi";
     else placeName.value = placeName.value;
 
     const KEY = "b256a47f9c0f45ebb1d63652233110";
