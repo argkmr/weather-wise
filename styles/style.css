@@ -247,10 +247,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 8em 1em;
+    margin: 7em 1em;
   }
   #container #sub-info {
-    margin: 10em 1em;
+    margin: 9em 1em;
   }
 }
 @media (max-width: 1333px) {
