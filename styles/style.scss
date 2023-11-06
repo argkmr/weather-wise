@@ -134,11 +134,10 @@ body {
     text-align: center;
     font-family: "EB Garamond";
     font-size: large;
-    margin: 5em 1em;
     background-image: linear-gradient(rgba(70, 103, 138, 0.88), lightslategray);
     min-width: 30vw;
     border-radius: 0.25em;
-    opacity: 0.8;
+    opacity: 0.9;
     box-shadow: rgb(35, 35, 35) 4px 4px 10px 1px;
 
     #temp {
@@ -187,13 +186,13 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgba(122, 120, 120, 0.863), rgb(124, 124, 124));
-    filter: opacity(0.8);
+    background-image: linear-gradient(rgba(105, 101, 101, 0.863), rgb(112, 109, 109));
+    filter: opacity(0.9);
     margin: 8em 1em;
     min-height: 50vh;
     padding: 1em;
     border-radius: 0.5em;
-    box-shadow: 4px 4px 10px 1px rgb(35, 35, 35);
+    box-shadow: 4px 4px 10px 1px rgb(36, 36, 36);
 
     #sub-info-1,
     #sub-info-2,
@@ -202,7 +201,6 @@ body {
     #sub-info-5,
     #sub-info-6,
     #sub-info-7 {
-        text-wrap: wrap;
         height: 8em;
         min-width: 9em;
         margin: 1em;
@@ -240,7 +238,6 @@ body {
         box-shadow: 4px 4px 15px 1px rgb(35, 35, 35);
         transition: all 0.3s;
         background-image: linear-gradient(rgba(49, 79, 112, 0.877), lightslategray);
-        //cursor: pointer;
     }
 
 
@@ -251,29 +248,12 @@ body {
     #welcome{
         margin: 8vh 5vw 0vh;
     }
-    #container {
-        #sub-info {
-
-            #sub-info-1,
-            #sub-info-2,
-            #sub-info-3,
-            #sub-info-4,
-            #sub-info-5,
-            #sub-info-6,
-            #sub-info-7 {
-                height: 10em;
-                width: 23em;
-            }
-
-        }
-
-    }
 }
 
 @media (min-width:1333px) {
     #container {
         display: flex;
-
+        
         #tempInfo {
             display: flex;
             flex-direction: column;
@@ -286,4 +266,22 @@ body {
         }
     }
 
+}
+
+@media (max-width:1333px){
+    #tempInfo{
+        margin:5em auto;
+        max-width: 19em;
+    }
+    #sub-info {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        min-height: 25vh;
+        margin: 5em 1em;
+       
+        #sub-info-7{
+            overflow: auto;
+        }
+    }
 }

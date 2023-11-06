@@ -13,4 +13,5 @@ const handlerFuncs = () =>{
 
 
 btn.addEventListener("click", handlerFuncs);
+placeName.addEventListener("change", handlerFuncs);
 navlogo.addEventListener("click", () => location.reload());
