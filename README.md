@@ -2,7 +2,9 @@ css :
 
     1. Sass/CSS (basic to advance css)
     
-    2. FlexBox  3. Media Queries
+    2. FlexBox  
+    
+    3. Media Queries
 
 js :  
     
